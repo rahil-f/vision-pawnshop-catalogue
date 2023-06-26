@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, List, Col, Row } from 'antd';
+import { Card, List, Col, Row, theme } from 'antd';
 import Car from './Car';
 import dataCar from './../data/data.json';
 import engine from './../assets/engine.png';
@@ -14,7 +14,11 @@ import three from './../assets/3.png';
 import four from './../assets/4.png';
 import five from './../assets/5.png';
 
+const { useToken } = theme;
+
 function CarList({ number }) {
+    const { token } = useToken();
+
     console.log(dataCar[number])
     const numberImg = (number) => {
         switch (number) {
@@ -56,9 +60,9 @@ function CarList({ number }) {
             renderItem={(item) => (
                 <List.Item>
                     <Card title={item.title}>
-                        <Row style={{display:"flex", justifyContent:"space-around"}}>
+                        <Row style={{display:"flex", justifyContent:"space-around", alignItems: 'center' }}>
                             <Car img={item.image} />
-                            <Row gutter={[16, 16]} style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+                            <Row gutter={[16, 16]} style={{display:"flex", justifyContent:"center", alignItems:"center", width: "50%"}}>
                                 <Col span={24} style={{display:"flex", justifyContent:"center", alignItems:"center"}} >
                                     {item.price} $
                                 </Col>

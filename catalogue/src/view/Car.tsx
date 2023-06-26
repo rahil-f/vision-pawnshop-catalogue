@@ -1,10 +1,12 @@
 import React from 'react';
-import { Image } from 'antd';
+import { Image, theme } from 'antd';
+
+const { useToken } = theme;
 
 function Car({ img }) {
     return (
         <Image
-            height={300}
+            width={400}
             src={img}
         />);
 };
