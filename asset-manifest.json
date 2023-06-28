@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/vision-pawnshop-catalogue/static/css/main.754ebb54.css",
-    "main.js": "/vision-pawnshop-catalogue/static/js/main.d9414b8c.js",
+    "main.js": "/vision-pawnshop-catalogue/static/js/main.af5cdf0b.js",
     "index.html": "/vision-pawnshop-catalogue/index.html",
     "main.754ebb54.css.map": "/vision-pawnshop-catalogue/static/css/main.754ebb54.css.map",
-    "main.d9414b8c.js.map": "/vision-pawnshop-catalogue/static/js/main.d9414b8c.js.map"
+    "main.af5cdf0b.js.map": "/vision-pawnshop-catalogue/static/js/main.af5cdf0b.js.map"
   },
   "entrypoints": [
     "static/css/main.754ebb54.css",
-    "static/js/main.d9414b8c.js"
+    "static/js/main.af5cdf0b.js"
   ]
 }
